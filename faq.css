@@ -1,0 +1,200 @@
+/*
+<!--University of Kuala Lumpur-->
+<!--WILDAN RIZQULLAH BIN KHAIRUL NIZAM 52052120061-->
+<!--SAYED AMIRUL HAZIQ BIN SAYED MOHAMAD KAMIL 52052120077-->
+<!--Azure Foundation-->
+<!--NORSHAHARIZAN PUTEH-->
+<!--WEEK 17-->
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #369de0;
+  color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+/* Navbar */
+
+nav {
+  background-color: #369de0;
+  color: #fff;
+  width: 100%;
+  overflow: auto;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 0 0 190px;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav a {
+  width: 100%;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #07f3d9;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+li.right {
+  float: right;
+}
+
+
+/* End Of Navbar */
+
+/*Footer Starts*/
+
+footer {
+  margin-top: 200px;
+  bottom: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cooter-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-style: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.socals a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+/*Footer Ends*/

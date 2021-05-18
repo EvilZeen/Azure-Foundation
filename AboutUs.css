@@ -1,0 +1,336 @@
+/*
+<!--University of Kuala Lumpur-->
+<!--WILDAN RIZQULLAH BIN KHAIRUL NIZAM 52052120061-->
+<!--SAYED AMIRUL HAZIQ BIN SAYED MOHAMAD KAMIL 52052120077-->
+<!--Azure Foundation-->
+<!--NORSHAHARIZAN PUTEH-->
+<!--WEEK 17-->
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+}
+
+/* Navbar */
+
+nav {
+  background-color: #369de0;
+  color: #fff;
+  width: 100%;
+  overflow: auto;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 0 0 190px;
+  list-style: none;
+}
+
+nav li {
+  float: left;
+}
+
+.logo img {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+nav a {
+  width: 100%;
+  display: block;
+  padding: 20px 15px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #07f3d9;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+li.right {
+  float: right;
+}
+
+
+/* End Of Navbar */
+
+/*Section A*/
+.section__a {
+  margin-top: 20px;
+  min-width: 100%;
+  min-height: auto;
+}
+
+.img-container {
+  max-width: 80%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.img-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-box {
+  background: lightblue;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.content-box h3{
+  padding: 1em;
+  font-size: 3em;
+  color: #369de0;
+}
+
+.content-box p{
+  font-size: 2em;
+}
+
+/* End of Section A */
+
+/*Section B*/
+.section__b{
+  width: 100%;
+  height: 100vh;
+}
+
+.section__b h1 {
+  background: lightblue;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10%;
+}
+
+/*End of Section B*/
+
+/*Timeline*/
+.container2 {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 150px 0;
+  background-color: #fff;
+}
+
+.container2 h2{
+  background-color: lightblue;
+  position: absolute;
+  margin-bottom: 100%;
+  display: block;
+  padding: 20px;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 20px;
+  background-color: lightblue;
+  color: #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.date{
+  color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+/*End of Timeline*/
+
+/*Footer Starts*/
+
+footer {
+  position: absolute;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cooter-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-style: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.socals a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+/*Footer Ends*/
